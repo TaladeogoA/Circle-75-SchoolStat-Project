@@ -1,19 +1,211 @@
+<div></div>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SchoolStat</title>
 
-    <link rel="stylesheet" href="style.css">
+  <!--   StyleSheets -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!--   Fonts -->
+  <link rel="preconnect" zhref="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link>
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+  <!--   Navbar -->
+  <nav>
+    <div class="header">
+      <span class="hamburger">
+        <img id="menu-btn" src="icons/hamburger-menu-icon.png">
+        <img class="hidden" id="close-btn" src="icons/close-navbar-icon.png">
+      </span>
+      <a href="/index.html">
+        <p class="heading">SchoolStat</p>
+      </a>
+    </div>
+
+    <div class="navGroup">
+      <div>
+        <a href="/index.html">
+          <img src="icons/SchoolStat-logo-black.png">
+        </a>
+      </div>
+
+      <div class="homepage-tab">
+        <span><img src="/icons/homepage-icon-white.png"> </span>
+        <a href="index.html">Homepage</a>
+      </div>
+
+      <div class="teachers-tab">
+        <span><img src="/icons/teachers-icon.png" alt=""> </span>
+        <a href="teachers.html">Teachers</a>
+      </div>
+
+      <div class="students-tab">
+        <span><img src="/icons/student-icon.png" alt=""> </span>
+        <a href="students.html">Students</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Body  -->
+  <div class="content">
+    <section class="data-section">
+      <div class="students-wrapper">
+        <div class="title">
+          <h1>Dashboard</h1>
+          <h3>Welcome to the SchoolStat dashboard.</h3>
+        </div>
+
+        <div class="gender-distr">
+          <div>
+            <h2>31</h2>
+            <p>Total Students</p>
+          </div>
+          <img src="/icons/total-students-icon.png">
+        </div>
+
+        <div class="gender-distr">
+          <div>
+            <h2>22</h2>
+            <p>Male Students</p>
+          </div>
+          <img src="/icons/male-students-icon.png">
+        </div>
+
+        <div class="gender-distr">
+          <div>
+            <h2>8</h2>
+            <p>Female Students</p>
+          </div>
+          <img src="/icons/female-students-icon.png">
+        </div>
+
+        <div class="gender-distr">
+          <div>
+            <h2>1</h2>
+            <p>Other Orientation</p>
+          </div>
+          <img src="/icons/other-orientation-icon.png">
+        </div>
+      </div>
+
+      <div class="tracks-chart">
+        <h4>Tracks</h4>
+        <img src="/icons/tracks-chart.png">
+      </div>
+    </section>
+
+    <section class="age-section">
+      <div class="age-wrapper">
+        <h3>Age of Students</h3>
+        <div class="age-chart">
+          <img src="/icons/age-chart.png">
+        </div>
+        <ul>
+          <li>Minimum age: 17</li>
+          <li>Maximum age: 23</li>
+          <li>Average age: 25</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <!-- Tablinks -->
+      <div class="tabs-header">
+        <h3>Database</h3>
+        <div class="tabs">
+          <button class="tablinks" data-for-tab="1">Teachers</button>
+          <button class="tablinks button--active" data-for-tab="2">Students</button>
+        </div>
+      </div>
+
+      <!-- Teachers Tab -->
+      <div class="info-table" data-tab="1">
+        <table>
+          <tr>
+            <th>Names</th>
+            <th>Location</th>
+            <th>Position</th>
+            <th>No of Courses</th>
+          </tr>
+          <tr>
+            <td>Tabitha Kayvu</td>
+            <td>Nairobi, Kenya</td>
+            <td>Community Manager</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Oluwasetemi Ojo</td>
+            <td>Kingston, Jamaica</td>
+            <td>Instructor</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>John Ajeigbe</td>
+            <td>Oyo, Nigeria</td>
+            <td>Instructor</td>
+            <td>2</td>
+          </tr>
+        </table>
+
+        <a href="teachers.html">See more <img src="/icons/see-more-icon.png"></a>
+      </div>
+
+      <!-- Students Tab -->
+      <div class="info-table tab-content--active" data-tab="2">
+        <table>
+          <tr>
+            <th>Names</th>
+            <th>Location</th>
+            <th>Track</th>
+            <th>Gender</th>
+          </tr>
+          <tr>
+            <td>Oluwadamilare Peter Jegede</td>
+            <td>Oyo, Nigeria</td>
+            <td>Frontend</td>
+            <td>Male</td>
+          </tr>
+          <tr>
+            <td>Ikenna Magnus Isaac</td>
+            <td>Lagos, Nigeria</td>
+            <td>Frontend</td>
+            <td>Male</td>
+          </tr>
+          <tr>
+            <td>Isaac Okanigbe</td>
+            <td>Lagos, Nigeria</td>
+            <td>Frontend</td>
+            <td>Male</td>
+          </tr>
+        </table>
+
+        <a href="students.html">See more <img src="/icons/see-more-icon.png"></a>
+      </div>
+
+
+    </section>
+  </div>
+
+  <script defer src="/scripts/info-tabs.js"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>

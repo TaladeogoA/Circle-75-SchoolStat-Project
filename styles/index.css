@@ -1,0 +1,223 @@
+/* Styling for curent Tab */
+.homepage-tab {
+  background: linear-gradient(180deg, #894CF2 0%, #6757F6 100%);
+}
+
+.homepage-tab a {
+  color: white;
+  text-decoration: none;
+}
+
+.teachers-tab a, .students-tab a {
+  color: #7D7F87;
+  text-decoration: none;
+}
+
+.homepage-tab a:hover, .students-tab a:hover, .teachers-tab a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  background-color: #F5F5F5;
+  overflow: hidden;
+}
+
+.data-section {
+  display: flex;
+  align-items: flex-end;
+}
+
+.students-wrapper {
+   width: 70%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1rem;
+  margin: 1rem 2rem;
+}
+
+.students-wrapper .title {
+  grid-column: 1 / span 2;
+}
+
+.title {
+    margin-top: 1rem;
+}
+
+.title h1 {
+  font-size: 1.6rem;
+}
+
+.title h3 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.gender-distr {
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  align-items: flex-end;
+  padding: 1rem;
+
+}
+
+.gender-distr div {
+  margin-right: 2rem;
+}
+
+.gender-distr img {
+  width: fit-content;
+  object-fit: contain;
+}
+
+.tracks-chart {
+  margin: 1rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  width: 30%;
+}
+
+.tracks-chart h4 {
+  position: relative;
+  top: 3rem;
+  left: 2rem;
+}
+
+.tracks-chart img {
+  max-width:100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Age Section */
+.age-section {
+  margin: 2rem;
+}
+
+.age-section ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.age-wrapper {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.age-chart img {
+  width: fit-content;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+
+/* Database Section */
+.info-section{
+  margin: 0 2rem;
+  margin-bottom: 2rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.tabs-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.tablinks {
+  background-color: transparent;
+  border: none;
+  margin-right: 1rem;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.tablinks:hover {
+  cursor: pointer;
+}
+
+.button--active {
+  color: #C234EF;
+  border-bottom: solid 1px #C234EF;
+}
+
+
+.info-table {
+  overflow-x:auto;
+  border-radius: 0 0 10px 10px;
+  display: none;
+}
+
+.info-table a {
+  margin: 1rem;
+  color: black;
+}
+
+.info-table a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tab-content--active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+
+
+
+@media (max-width: 426px) {
+  .data-section {
+    flex-direction: column;
+  }
+
+  .students-wrapper {
+    width: auto;
+    margin: 0 2rem;
+  }
+
+  .tracks-chart {
+    width: auto;
+    margin: 0 1rem;
+  }
+
+  .tracks-chart h4 {
+    font-size: 1.2rem;
+  }
+
+  .age-section {
+  margin: 1rem;
+}
+
+  .age-section ul {
+  font-size: x-small;
+}
+}
+
+
+@media (min-width: 1024px) {
+  .content {
+    margin-left: 20%;
+  }
+}

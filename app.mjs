@@ -1,17 +1,35 @@
+
+
 function startApp() {
-    // Your entire app should not necessarily be coded inside this 
-    // single function (though there's no penalty for that), 
-    // so create and use/call additional functions from here
   
-    // pls remove the below and make some magic in here!
-    console.log('make magic in here!');
-  
-    const header = document.querySelector('h2');
-    if(header) {
-      header.textContent = 'make some magic here!!';
+};
+
+// Mobile Nav Function
+function mobileMenu() {
+  const menuBtn = document.getElementById('menu-btn');
+  const closeBtn = document.getElementById('close-btn');
+  const hamburger = document.querySelector('.hamburger')
+  const mobileMenu = document.querySelector('.navGroup');
+
+
+  hamburger.addEventListener('click', () => {
+    menuBtn.classList.toggle('hidden');
+    closeBtn.classList.toggle('hidden');
+    // mobileMenu.style.display = 'block';
+
+    if (mobileMenu.className === "navGroup") {
+      mobileMenu.classList.toggle('visible');
+    } else {
+      mobileMenu.className = "navGroup";
     }
-  };
-  
-  // ======= DO NOT EDIT ============== //
-  export default startApp;
-  // ======= EEND DO NOT EDIT ========= //
+
+  })
+
+}
+
+
+export { mobileMenu };
+
+// ======= DO NOT EDIT ============== //
+export default startApp;
+// ======= EEND DO NOT EDIT ========= //

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SchoolStat</title>
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/teachers.css">
+
+
+  <!--   Fonts -->
+  <link rel="preconnect" zhref="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body>
+  <!--   Navbar Start -->
+  <nav>
+    <div class="header">
+      <span class="hamburger">
+        <img id="menu-btn" src="icons/hamburger-menu-icon.png">
+        <img class="hidden" id="close-btn" src="icons/close-navbar-icon.png">
+      </span>
+      <a href="/index.html">
+        <p class="heading">SchoolStat</p>
+      </a>
+    </div>
+
+    <div class="navGroup">
+      <div>
+        <a href="/index.html">
+          <img src="icons/SchoolStat-logo-black.png">
+        </a>
+      </div>
+
+      <div class="homepage-tab">
+        <span><img src="/icons/homepage-icon-grey.png"> </span>
+        <a href="index.html">Homepage</a>
+      </div>
+
+      <div class="teachers-tab">
+        <span><img src="/icons/teachers-icon-white.png" alt=""> </span>
+        <a href="teachers.html">Teachers</a>
+      </div>
+
+      <div class="students-tab">
+        <span><img src="/icons/student-icon.png" alt=""> </span>
+        <a href="students.html">Students</a>
+      </div>
+    </div>
+  </nav><!-- Nav End -->
+
+
+  <div class="main">
+    <!-- Main start -->
+    <div class="title">
+      <h1>Instructors</h1>
+      <p>See all info on our instructors</p>
+    </div>
+
+    <div class="user">
+      <img src="Instructors/Tabitha-img.jpg" alt="tabitha">
+
+      <span>
+        <p class="username">Tabitha Kavyu</p>
+        <p>Community Manager at AltSchool Africa</p>
+        <p><a class="view-details" href="#">View details</a></p>
+      </span>
+    </div>
+
+    <div class="user">
+      <img src="Instructors/Setemi-img.jpg" alt="setemi">
+
+
+      <span>
+        <p class="username">Oluwasetemi Ojo</p>
+        <p>Instructor at AltSchool Africa</p>
+        <p><a class="view-details" href="#">View details</a></p>
+      </span>
+    </div>
+
+    <div class="user">
+      <img src="Instructors/John-img.jpg" alt="john">
+
+
+      <span>
+        <p class="username">John Ajeigbe</p>
+        <p>Instructor at AltSchool Africa</p>
+        <p><a class="view-details" href="#">View details</a></p>
+      </span>
+    </div>
+
+    <div class="user">
+      <img src="Instructors/Daniel-img.jpg" alt="daniel">
+
+
+      <span>
+        <p class="username">Daniel Adesoji</p>
+        <p>Instructor at AltSchool Africa</p>
+        <p><a class="view-details" href="#">View details</a></p>
+      </span>
+    </div>
+
+    <div class="user">
+      <img src="Instructors/Jerry-img.jpg" alt="jerry">
+
+      <span>
+        <p class="username">Jerry Uke</p>
+        <p>Programs Manager at AltSchool Africa</p>
+        <p><a class="view-details" href="#">View details</a></p>
+      </span>
+    </div>
+
+  </div>
+
+  <div class="modal-bg">
+    <img id="close-modal" src="icons/close-navbar-icon.png">
+
+    <div class="container">
+      <div class="name-img-div">
+        <img src=""></img>
+        <h2>Name Name</h2>
+        <h4>state, country</h4>
+      </div>
+
+      <div class="experience-div">
+        <h4>Experience</h3>
+          <p>experience experience</p>
+      </div>
+
+      <div class="age-gender-div">
+        <div>
+          <h4>Age</h4>
+          <p>age inf</p>
+        </div>
+
+        <div>
+          <h4>Gender</h4>
+          <p>gender inf</p>
+        </div>
+
+        <div>
+          <h4>Course Taught</h3>
+            <p>Course inf</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Main End -->
+
+  <!--   Scripts -->
+  <script src="/scripts/students.mjs" type="module"></script>
+  <script defer src="/scripts/view-details.js"></script>
+</body>
+
+</html>
